@@ -1,0 +1,20 @@
+<header style="display:flex; justify-content:space-between; padding:12px; background:#1976d2; color:white;">
+  <span>Security Dashboard</span>
+  <button (click)="logout()">Logout</button>
+</header>
+
+<section style="padding:16px;">
+  <h2>Summary</h2>
+  <div style="display:flex; gap:16px;">
+    <div>Threats: 24</div>
+    <div>Blocked: 18</div>
+    <div>Traffic: 12k</div>
+  </div>
+
+  <h2 style="margin-top:24px;">Recent Activity</h2>
+  <p>Dashboard works!</p>
+</section>
+
+<app-traffic-chart></app-traffic-chart>
+<hr/>
+<app-threat-table></app-threat-table>

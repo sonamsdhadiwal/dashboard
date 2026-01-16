@@ -1,0 +1,8 @@
+<h3 class="bar">Traffic</h3>
+
+<div class="bar" *ngFor="let item of traffic">
+  <span>{{ item.label }}</span>
+  <div class="bar-fill" [style.width.%]="item.value">
+    {{ item.value }}%
+  </div>
+</div>
